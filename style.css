@@ -79,13 +79,39 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
- .countdown-time .countdown-time-item.countdown-time-tem-text {
+.countdown .countdown-time .countdown-time-item {
+  margin-top: 1.18rem;
+  text-align: center;
+}
+ .countdown-time .countdown-time-item .countdown-time-tem-text {
    font-size: 0.875rem;
    font-weight: 300;
    color: var(--text-color);
  }
-.countdown-time .countdown-time-item.countdown-time-tem-nunber {
-  font-size: 4.5rem;
+.countdown-time .countdown-time-item .countdown-time-tem-nunber {
+  font-size: 30px;
    font-weight: 400;
    color: var(--black)
  }
+
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+    gap: 7rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .container .foguete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .foguete img {
+    width: 90%;
+  }
+}
