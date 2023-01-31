@@ -1,27 +1,69 @@
+body {
+  width: 100vw;
+  height: 100vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
 :root {
   --black: #4D4C59;
   --purple: #6C63FF;
 	--light-grey: #C8C8C8;
   --text-color: #9C9AB6;
 }
+.sombra{
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sons-serif;
+
+  gap: 2rem;
+}
+.footer{
+   width: 100%;
+
+  position: absolute;
+  bottom: -3rem;
+  right: 0;
+}
 .foguete{
-  height: 198px;
+  height: 200px;
+  width: 90%;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 .botao{
-  height: 60px;
-  width: 160px;
+  height: 40px;
+  width: 140px;
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 17px;
+  color: #6C63FF;
+}
+.container.foguete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .countdown header h1{
-  font-size: 2.25rem;
+  font-size: 2.15rem;
   font-weight: 500;
   color: var(--purple);
 
@@ -47,4 +89,3 @@
    font-weight: 400;
    color: var(--black)
  }
-
