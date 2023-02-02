@@ -1,69 +1,27 @@
-body {
-  width: 100vw;
-  height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
-
-  overflow: hidden;
-}
 :root {
   --black: #4D4C59;
   --purple: #6C63FF;
 	--light-grey: #C8C8C8;
   --text-color: #9C9AB6;
 }
-.sombra{
-  width: 100%;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.container {
-  width: 80%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Poppins', sons-serif;
-
-  gap: 2rem;
-}
-.footer{
-   width: 100%;
-
-  position: absolute;
-  bottom: -3rem;
-  right: 0;
-}
 .foguete{
-  height: 200px;
-  width: 90%;
+  height: 198px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 .botao{
-  height: 40px;
-  width: 140px;
+  height: 60px;
+  width: 160px;
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 17px;
-  color: #6C63FF;
-}
-.container.foguete {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container .countdown header h1{
-  font-size: 2.15rem;
+  font-size: 2.25rem;
   font-weight: 500;
   color: var(--purple);
 
@@ -79,39 +37,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
-.countdown .countdown-time .countdown-time-item {
-  margin-top: 1.18rem;
-  text-align: center;
-}
- .countdown-time .countdown-time-item .countdown-time-tem-text {
+ .countdown-time .countdown-time-item.countdown-time-tem-text {
    font-size: 0.875rem;
    font-weight: 300;
    color: var(--text-color);
  }
-.countdown-time .countdown-time-item .countdown-time-tem-nunber {
-  font-size: 30px;
+.countdown-time .countdown-time-item.countdown-time-tem-nunber {
+  font-size: 4.5rem;
    font-weight: 400;
    color: var(--black)
  }
 
-
-@media (max-width: 1080px) {
-  .container {
-    flex-direction: column;
-    gap: 7rem;
-  }
-
-  .titulo {
-    font-size: 1.5rem;
-  }
-
-  .container .foguete {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container .foguete img {
-    width: 90%;
-  }
-}
